@@ -1,0 +1,11 @@
+{
+  "name": "movie_list",
+  "version": "0.0.1",
+  "description": "test task",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Surma Mykailo",
+  "license": "ISC"
+}

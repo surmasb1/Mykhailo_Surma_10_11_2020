@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Movie List</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="modal" id="modal">
+      <div class="modal-header">
+        <button id="btn">&times;</button>
+      </div>
+      <div class="modal-body" id="modal_body"></div>
+    </div>
+    <div id="overlay"></div>
+
+    <div class="main_wrap">
+      <div class="content">
+        <div class="gallery" id="gallery"></div>
+        <div class="list" id="list">
+          <div class="list_title">
+            <img
+              width="30px"
+              height="30px"
+              src="../public//images/star2.svg"
+              alt="dfgdf"
+            />
+            <h3 class="list_h3">Favorite List</h3>
+          </div>
+          <ul class="list_ul" id="list_ul"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="../src/index.js"></script>
+  </body>
+</html>

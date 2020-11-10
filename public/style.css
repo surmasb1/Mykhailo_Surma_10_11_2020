@@ -1,0 +1,265 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+.main_wrap {
+  height: 100%;
+  margin: 40px 20px;
+  background-color: rgb(190, 190, 190);
+}
+.header {
+  background-color: cornsilk;
+  height: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content {
+  display: flex;
+
+  background-color: cyan;
+  height: 80%;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgb(196, 196, 191);
+  width: 80%;
+}
+.card {
+  background-color: rgb(233, 230, 225);
+  justify-content: center;
+  margin: 10px;
+  width: 23%;
+  border-radius: 20px;
+  border: 2px solid rgb(53, 53, 53);
+}
+.div_img {
+  padding: 5px 0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.img {
+  align-self: stretch;
+  height: 150px;
+  width: auto;
+}
+.star1 {
+  height: 40px;
+  width: auto;
+  position: absolute;
+  left: 80%;
+  cursor: pointer;
+}
+
+.star2 {
+  height: 35px;
+  width: auto;
+  position: absolute;
+  left: 80%;
+  cursor: pointer;
+}
+
+.name {
+  text-align: center;
+  margin: 5px 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+.year {
+  text-align: center;
+  font-size: 1rem;
+  font-style: italic;
+}
+
+.list {
+  width: 20%;
+  background-color: rgb(235, 237, 250);
+}
+.footer {
+  height: 5%;
+  background-color: rgb(158, 175, 160);
+}
+
+.list_ul {
+  list-style: none;
+  padding: 0 5px;
+  position: relative;
+}
+.img_close {
+  height: 20px;
+  width: auto;
+  position: absolute;
+  left: 80%;
+  cursor: pointer;
+  align-self: center;
+}
+.list_ul li {
+  font-family: "Trebuchet MS", "Lucida Sans";
+
+  margin-bottom: 10px;
+  border-radius: 5px;
+
+  box-shadow: 2px -2px 5px 0 rgba(0, 0, 0, 0.1),
+    -2px -2px 5px 0 rgba(0, 0, 0, 0.1), 2px 2px 5px 0 rgba(0, 0, 0, 0.1),
+    -2px 2px 5px 0 rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+.list_ul a {
+  color: rgb(56, 56, 56);
+  font-family: "Trebuchet MS", "Lucida Sans";
+  text-decoration: none;
+  font-size: 25px;
+}
+.list_li {
+  min-height: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.del_img {
+  height: 25px;
+  width: auto;
+}
+.list_title {
+  font-family: "Trebuchet MS", "Lucida Sans";
+  font-size: 22px;
+  padding: 20px 3px 30px 3px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* ------------------------------------------------ */
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) scale(0);
+  transition: 200ms ease-in-out;
+  border: 1px solid black;
+  border-radius: 10px;
+  z-index: 10;
+  background-color: white;
+  width: 70vw;
+  height: 80vh;
+}
+
+.modal.active {
+  transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+  padding: 5px 15px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: 1px solid black;
+}
+
+.modal-header #btn {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-size: 3rem;
+  /*   font-weight: bold;
+ */
+}
+
+.modal-body {
+  padding: 10px 15px;
+}
+
+#overlay {
+  position: fixed;
+  opacity: 0;
+  transition: 200ms ease-in-out;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  pointer-events: none;
+}
+
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+.img_modal {
+  align-self: stretch;
+  height: 250px;
+  width: auto;
+}
+.main {
+  display: flex;
+}
+.main_name {
+  font-size: 30px;
+  font-weight: bold;
+  margin: 30px 100px;
+}
+.main_text {
+  font-size: 14px;
+
+  margin: 10px 50px;
+}
+.star_div {
+  padding: 20px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: flex-start;
+}
+.star {
+  height: 40px;
+  width: auto;
+  position: absolute;
+  padding-right: 50px;
+  cursor: pointer;
+}
+.mov_year {
+  padding-left: 100px;
+}
+.footer_div {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.genres {
+  display: flex;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  height: 100%;
+  width: 230px;
+}
+.genre {
+  margin: 10px;
+  background-color: wheat;
+  border-radius: 5px;
+  border: 1px solid black;
+  width: 35%;
+}
+.actors {
+  margin-left: 100px;
+}
+.director {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.actor {
+  font-size: 16px;
+  font-style: italic;
+  margin: 0 10px;
+}
+.actor_div {
+  display: flex;
+  padding-right: 10px;
+}
